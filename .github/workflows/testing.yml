@@ -27,7 +27,7 @@ jobs:
     - name: Set up environment file
       run: |
         touch .env  # Create an empty .env file if it doesn't exist
-        echo "${{secrets.PROD_ENV_FILE_HOSTINGER}}" > .env  # Populate .env with secret value
+        echo "${{secrets.PROD_ENV_FILE_DEPLOYMENT}}" > .env  # Populate .env with secret value
 
     - name: Restart PM2 with Backend-Hostinger
       run: pm2 restart backend-deployment
