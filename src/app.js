@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 // API Routes
-app.use('/api/users', userRoutes);
+app.use('/api/v5/users', userRoutes);
 
 // 404 handler - catch all undefined routes
 app.use((req, res) => {
